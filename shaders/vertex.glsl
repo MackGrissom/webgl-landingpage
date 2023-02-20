@@ -100,7 +100,7 @@ void main() {
     vUv = uv;
     vNormal = normal;
     vec3 newPosition = position;
-    float noise = snoise(vec4(normal*40.,time*0.1));
+    float noise = snoise(vec4(normal*400.,time*0.1));
     // newPosition.z = 0.05*sin(length(position)*30. + time);
     newPosition = newPosition + 0.4*normal*noise;
     pulse = noise;
